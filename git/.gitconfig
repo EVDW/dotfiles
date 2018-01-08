@@ -1,0 +1,41 @@
+[user]
+    name = Emma
+    email = emmanuelle.collet@knplabs.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+[color "branch"]
+    current = green
+    local = yellow
+    remote = yellow reverse
+[merge]
+    tool = meld
+[alias]
+	ad = add -A
+	com = commit -m
+    sa = status
+    ck = checkout
+    ckb = checkout -b
+    ba = branch
+    amend = commit --amend --no-edit
+    rec = rebase --continue
+    mgt = mergetool
+    puf = push -f
+    pure = pull --rebase origin master
+[push]
+    default = current
+[pull]
+    default = current
+[mergetool]
+    keepBackup = false
+[rerere]
+	enabled = true
+[core]
+	excludesfile = /home/knplabs/.gitignore
+	autocrlf = input
+	editor = atom --wait

@@ -1,0 +1,21 @@
+# PROMPT COLOURS
+BLACK='\e[0;30m'        # Black - Regular
+RED='\e[0;31m'          # Red
+GREEN='\e[0;32m'        # Green
+YELLOW='\e[0;33m'       # Yellow
+BLUE='\e[0;34m'         # Blue
+PURPLE='\e[0;35m'       # Purple
+CYAN='\e[0;36m'         # Cyan
+WHITE='\e[0;37m'        # White
+BLACK_BOLD='\e[1;30m'   # Black - Bold
+RED_BOLD='\e[1;31m'     # Red - Bold
+GREEN_BOLD='\e[1;32m'   # Green - Bold
+YELLOW_BOLD='\e[1;33m'  # Yellow - Bold
+BLUE_BOLD='\e[1;34m'    # Blue - Bold
+PURPLE_BOLD='\e[1;35m'  # Purple - Bold
+CYAN_BOLD='\e[1;36m'    # Cyan - Bold
+WHITE_BOLD='\e[1;37m'   # White - Bold
+RESET='\e[0m'           # Text Reset
+
+# DEFINING THE PROMPT
+export PS1="\n${WHITE_BOLD}\u: ${WHITE}\w ${PURPLE_BOLD}\$(parse_git_branch)${WHITE_BOLD}\n▸ ${RESET}"

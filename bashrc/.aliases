@@ -1,0 +1,8 @@
+#Docker
+alias doc='docker-compose'
+alias doce='doc exec'
+alias docr='doc run --rm'
+alias docu='doc up -d'
+alias docs='doc stop'
+alias docb='doc build'
+alias docp='doc ps'

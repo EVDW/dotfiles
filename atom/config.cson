@@ -1,0 +1,37 @@
+"*":
+  "atom-autocomplete-php":
+    insertNewlinesForUseStatements: true
+  "atom-material-ui":
+    colors:
+      abaseColor: "#96001b"
+  "atom-symfony2":
+    console: [
+      "app/console"
+      "php/bin/console"
+      "bin/console"
+    ]
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontSize: 16
+    tabLength: 4
+  "exception-reporting":
+    userId: "e2bb1bcc-91c2-429b-967a-7956faa580a3"
+  "linter-ui-default":
+    panelHeight: 81
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  welcome:
+    showOnStartup: false
+".html.text.vue":
+  editor:
+    tabLength: 2
+".js.regexp.replacement.source":
+  editor:
+    tabLength: 2
