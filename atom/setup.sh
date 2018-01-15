@@ -1,8 +1,10 @@
 #!/bin/bash
 
 echo "Download and install"
-curl -o atom.deb https://atom.io/download/deb
-sudo dpkg -i atom.deb
+curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
+sudo apt-get install atom
 
 # To list atom packages use "apm list --installed --bare > ~/dotfiles/atom/packages.txt"
 echo "Install packages from ~/dotfiles/atom/packages.txt"

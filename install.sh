@@ -3,7 +3,7 @@
 echo "Emma's dotfiles"
 
 sudo apt-get update
-sudo apt-get install php7.0 php7.0-curl php7.0-gd php7.0-xml php7.0-intl php7.0-ldap php7.0-sqlite3 php7.0-mysql \
+sudo apt-get install php7.0 php7.0-cli php7.0-curl php7.0-gd php7.0-xml php7.0-intl php7.0-ldap php7.0-sqlite3 php7.0-mysql \
     git curl silversearcher-ag nodejs htop \
     libxss1 libappindicator1 libindicator7 \
     apt-transport-https ca-certificates docker-engine
@@ -13,7 +13,7 @@ cp ~/dotfiles/git/.gitconfig ~/.gitconfig
 cp ~/dotfiles/egit/.gitignore ~/.gitignore
 
 echo "-> Composer"
-curl -sS https://getcomposer.org/installer | php && mv ~/composer.phar ~/.bin/composer
+curl -sS https://getcomposer.org/installer | php && sudo mv ~/dotfiles/composer.phar ~/usr/local/bin/composer
 
 echo "-> Atom"
 bash atom/setup.sh
